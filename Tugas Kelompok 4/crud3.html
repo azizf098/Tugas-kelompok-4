@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Crud3
+    </title>
+    <link rel="stylesheet" href="border.css">
+</head>
+
+<body>
+
+	<h1><center>Penjualan Transaksi</center></h1>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>ID Barang</label><label class="validation-error hide" id="transaksiValidationError">This field is required.</label>
+                        <input type="number" name="transaksi" id="transaksi">
+                    </div>
+                    <div>
+                        <label>ID Pembeli</label>
+                        <input type="text" name="idbarang" id="idbarang">
+                    </div>
+                    <div>
+                        <label>No Telepon</label>
+                        <input type="number" name="idpembeli" id="idpembeli">
+                    </div>
+                    <div>
+                        <label>Tanggal</label>
+                        <input type="number" name="tanggal" id="tanggal">
+                    </div>
+                    <div>
+                        <label>Keterangan</label>
+                        <input type="text" name="keterangan" id="keterangan">
+                    </div>
+                    <div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Transaksi</th>
+                            <th>ID Barang</th>
+                            <th>ID Pembeli</th>
+                            <th>Tanggal</th>
+                            <th>Keterangan</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <input type="text" name="fullName" id="fullName">
+<input type="text" name="email" id="email">
+<input type="text" name="salary" id="salary">
+<input type="text" name="city" id="city">
+        </div>
+    <script src="crud3.js"></script>
+    <P><a href="crud4.html" class="tbl-biru">Selanjutnya</a></P>
+</body>
+</html>

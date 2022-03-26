@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Crud5
+    </title>
+    <link rel="stylesheet" href="border.css">
+</head>
+
+<body>
+
+	<h1><center>Penjualan Pembeli</center></h1>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nama Pembeli</label><label class="validation-error hide" id="namaPembeliValidationError">This field is required.</label>
+                        <input type="text" name="namaPembeli" id="namaPembeli">
+                    </div>
+                    <div>
+                        <label>Jenis Kelamin</label>
+                        <input type="text" name="jk" id="jk">
+                    </div>
+                    <div>
+                        <label>No Telepon</label>
+                        <input type="number" name="notlp" id="notlp">
+                    </div>
+                    <div>
+                        <label>Alamat</label>
+                        <input type="text" name="alamat" id="alamat">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Nama Pembeli</th>
+                            <th>Jenis Kelamin</th>
+                            <th>No Telepon</th>
+                            <th>Alamat</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <input type="text" name="fullName" id="fullName">
+<input type="text" name="email" id="email">
+<input type="text" name="salary" id="salary">
+<input type="text" name="city" id="city">
+        </div>
+    <script src="crud5.js"></script>
+    
+</body>
+</html>

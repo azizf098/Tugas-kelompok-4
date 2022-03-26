@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Crud2
+    </title>
+    <link rel="stylesheet" href="border.css">
+</head>
+
+<body>
+
+	<h1><center>Penjualan Supplier</center></h1>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nama Suppplier</label><label class="validation-error hide" id="namaSupplierValidationError">This field is required.</label>
+                        <input type="text" name="namaSupplier" id="namaSupplier">
+                    </div>
+                    <div>
+                        <label>ID Supplier</label>
+                        <input type="number" name="idsupplier" id="idsupplier">
+                    </div>
+                    <div>
+                        <label>No Telepon</label>
+                        <input type="number" name="notlp" id="notlp">
+                    </div>
+                    <div>
+                        <label>Alamat</label>
+                        <input type="text" name="alamat" id="alamat">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Nama Supplier</th>
+                            <th>ID Supplier</th>
+                            <th>No Telepon</th>
+                            <th>Alamat</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <input type="text" name="fullName" id="fullName">
+<input type="text" name="email" id="email">
+<input type="text" name="salary" id="salary">
+<input type="text" name="city" id="city">
+        </div>
+    <script src="crud2.js"></script>
+    <P><a href="crud3.html" class="tbl-biru">Selanjutnya</a></P>
+</body>
+</html>

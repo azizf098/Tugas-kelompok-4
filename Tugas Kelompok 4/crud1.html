@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Crud1
+    </title>
+    <link rel="stylesheet" href="border.css">
+</head>
+
+<body>
+
+	<h1><center>Penjualan Barang</center></h1>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nama Barang</label><label class="validation-error hide" id="namaBarangValidationError">This field is required.</label>
+                        <input type="text" name="namaBarang" id="namaBarang">
+                    </div>
+                    <div>
+                        <label>ID Barang</label>
+                        <input type="number" name="idbarang" id="idbarang">
+                    </div>
+                    <div>
+                        <label>Harga</label>
+                        <input type="number" name="harga" id="harga">
+                    </div>
+                    <div>
+                        <label>Stok</label>
+                        <input type="number" name="stok" id="stok">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Nama Barang</th>
+                            <th>ID Barang</th>
+                            <th>Harga</th>
+                            <th>Stok</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <input type="text" name="fullName" id="fullName">
+<input type="text" name="email" id="email">
+<input type="text" name="salary" id="salary">
+<input type="text" name="city" id="city">
+        </div>
+    <script src="crud1.js"></script>
+    <P><a href="crud2.html" class="tbl-biru">Selanjutnya</a></P>
+</body>
+</html>

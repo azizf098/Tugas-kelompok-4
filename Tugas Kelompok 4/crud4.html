@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Crud4
+    </title>
+    <link rel="stylesheet" href="border.css">
+</head>
+
+<body>
+
+	<h1><center>Penjualan Pembayaran</center></h1>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Tanggal Bayar</label><label class="validation-error hide" id="tglbayarValidationError">This field is required.</label>
+                        <input type="number" name="tglbayar" id="tglbayar">
+                    </div>
+                    <div>
+                        <label>Total Bayar</label>
+                        <input type="number" name="total" id="total">
+                    </div>
+                    <div>
+                        <label>ID Transaksi</label>
+                        <input type="number" name="id" id="id">
+                    </div>
+                    <div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Tanggal Bayar</th>
+                            <th>Total Bayar</th>
+                            <th>ID</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <input type="text" name="fullName" id="fullName">
+<input type="text" name="email" id="email">
+<input type="text" name="salary" id="salary">
+<input type="text" name="city" id="city">
+        </div>
+    <script src="crud4.js"></script>
+    <P><a href="crud5.html" class="tbl-biru">Selanjutnya</a></P>
+</body>
+</html>
